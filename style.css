@@ -352,6 +352,19 @@ h2 {
   color: var(--accent2);
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-size: 0.78rem;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  transition: border-color 0.2s ease;
+}
+.project-link:hover { border-color: var(--accent); }
+
 /* ----- EDUCATION ----- */
 .edu-grid { display: grid; gap: 0.9rem; }
 .edu-card {
