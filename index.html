@@ -14,6 +14,9 @@
 <!-- Circuit board background canvas -->
 <canvas id="circuit-bg"></canvas>
 
+<!-- Scroll progress -->
+<div id="scroll-progress-track"><div id="scroll-progress-bar"></div></div>
+
 <!-- NAV -->
 <nav>
   <a href="#home" class="nav-logo">NP<span>.</span></a>
@@ -29,7 +32,7 @@
 <div class="hero" id="home">
   <div>
     <h1>Nishan Pokharel</h1>
-    <p class="hero-sub">software_engineer.js · flinders_university · adelaide</p>
+    <p class="hero-sub"><span id="hero-typewriter"></span></p>
     <p class="hero-desc">Software Engineering student building things with Python, JavaScript, and embedded systems. ACS member passionate about reliable, well-crafted software.</p>
     <div class="hero-ctas">
       <a href="mailto:pokharel.nishan2000@gmail.com" class="btn-primary">Get in touch</a>
@@ -58,7 +61,7 @@
     <p class="section-tag fade-in">what_i_work_with</p>
     <h2 class="fade-in">Technical skills</h2>
     <div class="skills-grid">
-      <div class="skill-card fade-in">
+      <div class="skill-card fade-in glow-card">
         <h3>languages</h3>
         <div class="skill-tags">
           <span class="tag">Python</span>
@@ -68,11 +71,9 @@
           <span class="tag">SQL</span>
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
-          <span class="tag">Java</span>
-          <span class="tag">MERN</span>
         </div>
       </div>
-      <div class="skill-card fade-in">
+      <div class="skill-card fade-in glow-card">
         <h3>tools &amp; platforms</h3>
         <div class="skill-tags">
           <span class="tag">Git / GitHub</span>
@@ -82,7 +83,7 @@
           <span class="tag">MS Office</span>
         </div>
       </div>
-      <div class="skill-card fade-in">
+      <div class="skill-card fade-in glow-card">
         <h3>networking &amp; systems</h3>
         <div class="skill-tags">
           <span class="tag">LAN setup</span>
@@ -93,7 +94,7 @@
           <span class="tag">Linux</span>
         </div>
       </div>
-      <div class="skill-card fade-in">
+      <div class="skill-card fade-in glow-card">
         <h3>professional</h3>
         <div class="skill-tags">
           <span class="tag">Documentation</span>
@@ -149,7 +150,7 @@
     <h2 class="fade-in">Projects</h2>
     <div class="projects-grid">
 
-      <div class="project-card fade-in">
+      <div class="project-card fade-in glow-card">
         <div class="project-type">web_dev</div>
         <h3>Wildlife Conservation Website</h3>
         <p>Responsive multi-page website with species info pages and conservation content, built with mobile-first design principles.</p>
@@ -160,7 +161,7 @@
         </div>
       </div>
 
-      <div class="project-card fade-in">
+      <div class="project-card fade-in glow-card">
         <div class="project-type">embedded_systems</div>
         <h3>Self-Watering Plant Automation</h3>
         <p>Automated irrigation system using moisture sensors and microcontroller logic. Real-time sensor data handling and hardware debugging.</p>
@@ -171,7 +172,7 @@
         </div>
       </div>
 
-      <div class="project-card fade-in">
+      <div class="project-card fade-in glow-card">
         <div class="project-type">software</div>
         <h3>Java File Parser</h3>
         <p>Program to read, process, and organise structured data files. Focused on algorithmic logic and data management.</p>
@@ -191,7 +192,7 @@
     <h2 class="fade-in">Education</h2>
     <div class="edu-grid">
 
-      <div class="edu-card fade-in">
+      <div class="edu-card fade-in glow-card">
         <div>
           <div class="edu-degree">Bachelor of Engineering (Hons) – Computer Software Engineering</div>
           <div class="edu-school">Flinders University, Adelaide</div>
@@ -199,7 +200,7 @@
         <span class="edu-year">2025 – 2028</span>
       </div>
 
-      <div class="edu-card fade-in">
+      <div class="edu-card fade-in glow-card">
         <div>
           <div class="edu-degree">Advanced Diploma of Information Technology</div>
           <div class="edu-school">Sydney City College of Management</div>
@@ -207,7 +208,7 @@
         <span class="edu-year">2025</span>
       </div>
 
-      <div class="edu-card fade-in">
+      <div class="edu-card fade-in glow-card">
         <div>
           <div class="edu-degree">Diploma of Information Technology</div>
           <div class="edu-school">Sydney City College of Management, Adelaide</div>
@@ -215,7 +216,7 @@
         <span class="edu-year">2024</span>
       </div>
 
-      <div class="edu-card fade-in">
+      <div class="edu-card fade-in glow-card">
         <div>
           <div class="edu-degree">ACS Member — Australian Computer Society</div>
           <div class="edu-school">Professional certification · Ongoing</div>
@@ -234,28 +235,28 @@
     <h2 class="fade-in">Contact</h2>
     <div class="contact-grid">
 
-      <a href="mailto:pokharel.nishan2000@gmail.com" class="contact-item fade-in">
+      <a href="mailto:pokharel.nishan2000@gmail.com" class="contact-item fade-in glow-card">
         <div>
           <div class="contact-label">Email</div>
           <div class="contact-value">pokharel.nishan2000@gmail.com</div>
         </div>
       </a>
 
-      <a href="tel:0483181504" class="contact-item fade-in">
+      <a href="tel:0483181504" class="contact-item fade-in glow-card">
         <div>
           <div class="contact-label">Phone</div>
           <div class="contact-value">0483 181 504</div>
         </div>
       </a>
 
-      <a href="https://linkedin.com/in/nishan-pokharel-045661235" target="_blank" rel="noopener" class="contact-item fade-in">
+      <a href="https://linkedin.com/in/nishan-pokharel-045661235" target="_blank" rel="noopener" class="contact-item fade-in glow-card">
         <div>
           <div class="contact-label">LinkedIn</div>
           <div class="contact-value">nishan-pokharel-045661235</div>
         </div>
       </a>
 
-      <div class="contact-item fade-in" style="cursor: default;">
+      <div class="contact-item fade-in glow-card" style="cursor: default;">
         <div>
           <div class="contact-label">Location</div>
           <div class="contact-value">Mitchell Park, SA 5043</div>
@@ -274,6 +275,8 @@
 </section>
 
 <footer>Nishan Pokharel · Mitchell Park, SA · 2026</footer>
+
+<button id="scroll-top-btn" aria-label="Scroll to top">↑</button>
 
 <script src="script.js"></script>
 </body>
