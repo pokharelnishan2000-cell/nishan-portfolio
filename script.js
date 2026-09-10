@@ -1,8 +1,35 @@
-\/* ==========================================================================
+/* ==========================================================================
    Nishan Pokharel — Portfolio Scripts
    ========================================================================== */
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* --- Mobile nav toggle --- */
+(function () {
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+  if (!toggle || !links) return;
+
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  links.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 680) {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+
 
 /* --- Scroll fade-in with staggered delay per group --- */
 const staggerGroups = document.querySelectorAll('.skills-grid, .projects-grid, .edu-grid, .contact-grid');

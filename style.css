@@ -76,6 +76,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   background: rgba(10, 14, 23, 0.75);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -83,6 +84,17 @@ nav {
 }
 
 .nav-left { display: flex; align-items: center; gap: 2.5rem; }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem 0.3rem;
+}
 
 .nav-hire {
   background: linear-gradient(135deg, var(--accent), var(--accent2));
@@ -135,7 +147,7 @@ nav {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 6rem 2rem 4rem;
+  padding: 9rem 2rem 4rem;
   max-width: 860px;
   margin: 0 auto;
   position: relative;
@@ -321,14 +333,23 @@ h2 {
 }
 .tag:hover { background: var(--accent-soft); color: var(--accent2); border-color: #c9d6ef; }
 
-.tag-icon { display: inline-flex; align-items: center; gap: 0.4rem; padding-left: 0.4rem; }
-.tag-icon img {
-  width: 14px;
-  height: 14px;
+.tag-icon { display: inline-flex; align-items: center; gap: 0.4rem; padding-left: 0.35rem; }
+
+.icon-badge {
+  width: 18px;
+  height: 18px;
   background: #fff;
-  border-radius: 3px;
-  padding: 1.5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+}
+.icon-badge img {
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+  display: block;
 }
 
 /* ----- EXPERIENCE TIMELINE ----- */
@@ -488,17 +509,26 @@ h2 {
 #scroll-top-btn:hover { box-shadow: var(--shadow-md); }
 
 /* ----- FOOTER ----- */
-footer { position: relative; z-index: 1; border-top: 1px solid var(--border); }
+footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  background: #0d1424;
+  border-top: 1px solid var(--border);
+  border-radius: 24px 24px 0 0;
+}
 
 .footer-inner {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
-  gap: 2.5rem;
-  padding: 3.5rem 2rem 2.5rem;
+  gap: 3rem;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 3rem;
 }
 
 .footer-about p {
-  margin-top: 0.9rem;
+  margin-top: 1rem;
   font-size: 0.85rem;
   color: var(--muted);
   max-width: 320px;
@@ -510,7 +540,7 @@ footer { position: relative; z-index: 1; border-top: 1px solid var(--border); }
   font-size: 0.72rem;
   color: var(--muted);
   letter-spacing: 0.05em;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .footer-col a {
@@ -518,7 +548,7 @@ footer { position: relative; z-index: 1; border-top: 1px solid var(--border); }
   font-size: 0.85rem;
   color: var(--muted);
   text-decoration: none;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.7rem;
   transition: color 0.2s ease;
   width: fit-content;
 }
@@ -528,12 +558,12 @@ footer { position: relative; z-index: 1; border-top: 1px solid var(--border); }
   text-align: center;
   font-size: 0.78rem;
   color: var(--muted);
-  padding: 1.3rem 2rem;
+  padding: 1.4rem 2rem;
   border-top: 1px solid var(--border);
 }
 
 @media (max-width: 640px) {
-  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 2.5rem 2rem; }
   .footer-about { grid-column: 1 / -1; }
 }
 
@@ -542,11 +572,23 @@ footer { position: relative; z-index: 1; border-top: 1px solid var(--border); }
 .fade-in.visible { opacity: 1; transform: none; }
 
 /* ----- RESPONSIVE ----- */
-@media (max-width: 600px) {
-  nav { padding: 0.9rem 1.2rem; flex-wrap: wrap; row-gap: 0.6rem; }
-  .nav-left { flex-wrap: wrap; row-gap: 0.5rem; gap: 1.2rem; }
-  .nav-links { gap: 1.2rem; }
-  .hero { padding: 5rem 1.2rem 3rem; }
+@media (max-width: 680px) {
+  nav { padding: 0.9rem 1.2rem; }
+  .nav-toggle { display: flex; align-items: center; justify-content: center; }
+  .nav-left { gap: 1rem; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    flex-direction: column;
+    gap: 0.9rem;
+    background: rgba(10, 14, 23, 0.97);
+    border-bottom: 1px solid var(--border);
+    padding: 1.1rem 1.5rem 1.4rem;
+  }
+  .nav-links.open { display: flex; }
+  .hero { padding: 7.5rem 1.2rem 3rem; }
   section { padding: 3.5rem 1.2rem; }
   #scroll-top-btn { right: 1rem; bottom: 1rem; }
 }

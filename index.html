@@ -21,7 +21,8 @@
 <nav>
   <div class="nav-left">
     <a href="#home" class="nav-logo">NP<span>.</span></a>
-    <ul class="nav-links">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -69,33 +70,33 @@
       <div class="skill-card fade-in glow-card">
         <h3>languages</h3>
         <div class="skill-tags">
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy">Python</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy">Java</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy">JavaScript</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" loading="lazy">C</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" loading="lazy">C++</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy">SQL</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy">HTML</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy">CSS</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy"></span>Python</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy"></span>Java</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy"></span>JavaScript</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="" loading="lazy"></span>C</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" loading="lazy"></span>C++</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy"></span>SQL</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy"></span>HTML</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy"></span>CSS</span>
         </div>
       </div>
       <div class="skill-card fade-in glow-card">
         <h3>frameworks &amp; stacks</h3>
         <div class="skill-tags">
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy">React</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy">Node.js</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy">Express</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy">MongoDB</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy"></span>React</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy"></span>Node.js</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy"></span>Express</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy"></span>MongoDB</span>
           <span class="tag">MERN Stack</span>
         </div>
       </div>
       <div class="skill-card fade-in glow-card">
         <h3>tools &amp; platforms</h3>
         <div class="skill-tags">
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy">Git / GitHub</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" loading="lazy">VS Code</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" loading="lazy">Linux CLI</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" loading="lazy">Bootstrap</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy"></span>Git / GitHub</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" loading="lazy"></span>VS Code</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" loading="lazy"></span>Linux CLI</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" loading="lazy"></span>Bootstrap</span>
           <span class="tag">MS Office</span>
         </div>
       </div>
@@ -106,8 +107,8 @@
           <span class="tag">IP addressing</span>
           <span class="tag">Router config</span>
           <span class="tag">PC assembly</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="" loading="lazy">Windows</span>
-          <span class="tag tag-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" loading="lazy">Linux</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="" loading="lazy"></span>Windows</span>
+          <span class="tag tag-icon"><span class="icon-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" loading="lazy"></span>Linux</span>
         </div>
       </div>
       <div class="skill-card fade-in glow-card">
