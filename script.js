@@ -192,12 +192,12 @@ document.querySelectorAll('.glow-card').forEach(card => {
         const dist = Math.hypot(x - mouseX, y - mouseY);
         const proximity = Math.max(0, 1 - dist / RADIUS);
 
-        const baseColor = [184, 200, 232];
-        const hotColor = [26, 110, 240];
+        const baseColor = [58, 72, 102];
+        const hotColor = [79, 141, 253];
         const mix = baseColor.map((c, i) => Math.round(c + (hotColor[i] - c) * proximity));
         ctx.strokeStyle = `rgb(${mix[0]}, ${mix[1]}, ${mix[2]})`;
         ctx.lineWidth = 1 + proximity * 1.2;
-        ctx.fillStyle = `rgba(26, 110, 240, ${0.6 + proximity * 0.4})`;
+        ctx.fillStyle = `rgba(79, 141, 253, ${0.55 + proximity * 0.45})`;
 
         if (rand(col, row, 1) > 0.5 && col < cols - 1) {
           ctx.beginPath();
